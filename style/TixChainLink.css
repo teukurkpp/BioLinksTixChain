@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Outfit", sans-serif;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../assets/background.png");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.my-photo {
+  width: min(20vw, 8rem);
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: top;
+  margin-bottom: -2rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.sosmed {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.sosmed i {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.sosmed i:hover {
+  color: #a65ec6;
+}
+
+ul {
+  width: 80%;
+  max-width: 40rem;
+  list-style: none;
+}
+
+.links {
+  margin-top: 1rem;
+}
+
+.links li:not(:last-child) {
+  margin-bottom: 1.7rem;
+}
+
+.link-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9b56c6;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 7px;
+  box-shadow: 8px 10px 0 #ffffff;
+  width: 100%;
+  height: 3.7rem;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.links .link-text {
+  text-align: center;
+  font-weight: 600;
+  font-size: 17px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.link-card:hover {
+  background-color: #a12ed1;
+  transform: scale(1.05);
+}
+
+.link-card:active {
+  background-color: #570c9f;
+  transform: scale(0.95);
+}
+
+.copyright {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: #ffffff;
+  font-size: 0.75rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  body {
+    padding: 0.5rem;
+    gap: 0.5rem;
+  }
+
+  ul {
+    width: 90%;
+  }
+
+  .link-card {
+    height: 3rem;
+    padding: 0.8rem;
+  }
+
+  .my-photo {
+    width: min(30vw, 6rem);
+    margin-bottom: -1.5rem;
+  }
+
+  .sosmed i {
+    font-size: 1.2rem;
+  }
+
+  .copyright {
+    font-size: 0.65rem;
+  }
+}
+
+@media (max-width: 900px) {
+  ul {
+    width: 85%;
+  }
+
+  .link-card {
+    height: 3.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  ul {
+    max-width: 50rem;
+  }
+
+  .link-card {
+    height: 4rem;
+  }
+
+  .my-photo {
+    width: min(15vw, 8rem);
+  }
+}
