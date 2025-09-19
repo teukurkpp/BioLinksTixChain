@@ -1,1 +1,2 @@
-Bio Links for Tix Chain
+Project ini adalah custom bio link sederhana yang dibuat untuk startup TixChain sebagai identitas digital dan sarana promosi. Konsepnya mirip dengan Linktree, namun dirancang khusus agar sesuai dengan branding TixChain.
+Dengan halaman ini, TixChain dapat menyimpan beberapa tautan penting dalam satu tempat, sehingga memudahkan pengguna untuk mengakses informasi konser, event, maupun sosial media resmi.
